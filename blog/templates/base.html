@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>WebStrong Cyber Security Blog</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css" title="style" />
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=1408307939386531";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>	
+
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="/blog">Web<span class="logo_colour">Strong</span></a></h1>
+          <su>Cyber Security Blog</su>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="/blog">Home</a></li>
+          <li><a href="/blog/archives">Archives</a></li>
+          <li><a href="/blog/feed">Feed/RSS</a></li>
+          <li><a href="/blog/contato">Contact us</a></li>
+          <li><a href="/blog/sobre">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Latest News</h3>
+        <h4>New Website Launched</h4>
+        <h5>Wed Sep 11 - 2013</h5>
+        <p>New website is in debug mode, i'm very happy for the job.<br /><a href="#">Read more</a></p>
+        <p></p>
+        <h4>New frontend</h4>
+        <h5>Wed Sep 11 - 2013</h5>
+        <p>New frontend is a new light to the end of the tunnel, hehehe. :D<br /><a href="#">Read more</a></p>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="https://docs.djangoproject.com/en/dev/releases/1.5/">Django docs</a></li>
+          <li><a href="http://python.org/doc">Python docs</a></li>
+          <li><a href="#">HTML5 docs</a></li>
+          <li><a href="#">CSS3 docs</a></li>
+		  <li><a href="#">MySQL docs</a></li>
+        </ul>
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="/static/images/search.png" alt="Search" title="Search" />
+          </p>
+		<div class="poweredby">
+			<a href="https://www.djangoproject.com/">_____________</a>
+		</div>
+		<br>
+		<div class="fb-like-box" data-href="https://www.facebook.com/webStrongSec" data-width="200" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+        </form>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Welcome to WebStrong</h1>
+		<p>[+]Ethical Hacking</p
+		<p>[+]Programming</p>
+		<p>[+]Network</p>
+		<p>[+]Social Web</p>
+		<br><p>------------------------------------------------------------------------------------------------------------------------------------------------</p></br>
+		<section>
+		<article>
+
+
+			<!-- blog post -->
+			{% block content %}
+
+			{% endblock %}
+		</article> <!-- blog post ends -->
+
+		</section>
+        
+        <h2>Browser Compatibility</h2>
+        <p>This template has been tested in the following browsers:</p>
+        <ul>
+          <li>Internet Explorer 8</li>
+          <li>Internet Explorer 7</li>
+          <li>FireFox 3.5</li>
+          <li>Google Chrome 6</li>
+          <li>Safari 4</li>
+		  <li>Iceweasel 22.0<li>
+		  <li>Sea Monkey</li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+	<div class="about">
+<strong>Jose Maria Micoli</strong> - <em>Programmer & Pentester</em>
+</div>
+<div class="social">
+<a href="#">Twitter</a> | 
+<a href="https://facebook.com/josemaria.micoli">Facebook</a> |
+<a href="#">LinkedIn</a> | 
+<a href="https://github.com/JoseMariaMicoli">Github</a> 
+</div>
+    </div>
+  </div>
+</body>
+</html>

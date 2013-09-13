@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="sobre">
+<h2>Sobre</h2>
+<p><h3>Hello every body,</h3></p>
+<p>my name is Jose Maria Micoli and i love Software</p>
+</div>
+{% endblock %}

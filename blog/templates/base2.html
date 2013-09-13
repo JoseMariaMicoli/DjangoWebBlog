@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset=utf-8>
+		<title> WebStrong Cyber Security Blog </title>
+		<link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=1408307939386531";
+  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div id="tudo">
+		<header>
+			<h1><a href="/blog" title="Homepage"> WebStrong Cyber Security Blog </a></h1>
+		</header> 
+		<div id="menu">
+			<nav> 
+				<ul>
+					<a href="/blog/archives" class="archives"> Arquivo</a>
+					<a href="/blog/feed" class="rss"> Feed/RSS</a>
+					<a href="/blog/contato"> Contato</a>
+					<a href="/blog/sobre"> Sobre</a>
+					{% if user.is_staff %}
+
+					{% endif %}
+				</ul>
+			</nav>
+		</div>
+		<section>
+		<article>
+
+
+			<!-- blog post -->
+			{% block content %}
+
+			{% endblock %}
+		</article> <!-- blog post ends -->
+
+		</section>
+	<footer>
+<div class="about">
+<strong>Jose Maria Micoli</strong> - <em>Programmer & Pentester</em>
+</div>
+<div class="social">
+<a href="#">Twitter</a> | 
+<a href="https://facebook.com/josemaria.micoli">Facebook</a>
+<a href="#">LinkedIn</a> | 
+<a href="https://github.com/JoseMariaMicoli">Github</a> 
+</div>
+<div class="poweredby">
+<a href="https://www.djangoproject.com/">django powered</a>
+</div>
+</footer>
+</div>
+</body>
+</html>
