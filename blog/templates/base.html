@@ -1,4 +1,6 @@
 <!DOCTYPE HTML>
+{% load i18n %}
+
 <html lang="en">
 
 <head>
@@ -47,6 +49,7 @@
     <div id="site_content">
       <div class="sidebar">
         <!-- insert your sidebar items here -->
+		{% include "idiomas.html" %}
         <h3>Latest News</h3>
         <h4>New Website Launched</h4>
         <h5>Wed Sep 11 - 2013</h5>
@@ -78,7 +81,7 @@
       </div>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>Welcome to WebStrong</h1>
+        <h1>{% trans "Welcome to WebStrong" %}</h1>
 		<p>[+]Ethical Hacking</p
 		<p>[+]Programming</p>
 		<p>[+]Network</p>

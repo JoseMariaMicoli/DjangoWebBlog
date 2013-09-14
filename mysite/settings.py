@@ -1,4 +1,5 @@
 # Django settings for mysite project.
+# -*- coding: utf-8 -*-
 
 LOCAL = False
 DEBUG = False
@@ -16,7 +17,7 @@ DATABASES = {
         'NAME': 'mysitedb',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
-        'PASSWORD': 'pass',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '3306',                      # Set to empty string for default.
     }
@@ -34,7 +35,13 @@ TIME_ZONE = 'America/Sao_Paulo'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+
+LANGUAGES = (
+	('en', u'English'),
+	('pt-br', u'Português'),
+	('es', u'Español'),
+)
 
 SITE_ID = 1
 
@@ -104,6 +111,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+	'django.middleware.locale.LocaleMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -165,8 +173,12 @@ LOGGING = {
 }
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'cr4sh.dump@gmail.com'
-EMAIL_HOST_PASSWORD = 'BlackTalon513'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_SUBJECT_PREFIX = '[Blog do Jose]'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = 'True'
+
+LOCALE_PATHS = (
+    '/root/web_projects/mysite/locale',
+)
