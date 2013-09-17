@@ -5,6 +5,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django import forms
 from django.core.mail import send_mail
+from django.shortcuts import get_object_or_404
 
 class FormContato(forms.Form):
     nome = forms.CharField(max_length=50)
@@ -51,6 +52,10 @@ def sobre(request):
 def tagpage(request, tag):
 	posts = Post.objects.filter(tags__name=tag)
 	return render_to_response("tagpage.html", {"posts":posts, "tag":tag})
+
+def post(request, slug):
+	post = get_object_or_404(Post, slug = slug)
+	return render_to_response('post.html', locals(), context_instance = RequestContext(request))
 
 
 

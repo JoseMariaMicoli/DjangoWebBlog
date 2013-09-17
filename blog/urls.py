@@ -21,9 +21,10 @@ urlpatterns = patterns('blog.views',
     url(r'^$', ListView.as_view(
                            queryset=Post.objects.all().order_by("-create")[:2],
                            template_name="blog.html")),
-    url(r'^(?P<pk>\d+)$', DetailView.as_view(
-                           model=Post,
-                           template_name="post.html")),
+    #url(r'^(?P<pk>\d+)$', DetailView.as_view(
+     #                      model=Post,
+      #                     template_name="post.html")),
+	url(r'^post/(?P<slug>[\w_-]+)/$', 'post'),
     url(r'^archives/$', ListView.as_view(
                            queryset=Post.objects.all().order_by("-create"),
                            template_name="archives.html")),
