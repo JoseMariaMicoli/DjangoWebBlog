@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 {% load i18n %}
 
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <title>WebStrong Cyber Security Blog</title>
+  <title>WebStrong Cyber Security</title>
   <meta charset="utf-8" />
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
@@ -32,17 +32,18 @@
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="/blog">Web<span class="logo_colour">Strong</span></a></h1>
-          <su>Cyber Security Blog</su>
+          <su>Cyber Security</su>
         </div>
       </div>
       <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="selected"><a href="/blog">Home</a></li>
-          <li><a href="/blog/archives">Archives</a></li>
+          <li class="selected"><a href="/blog">Blog</a></li>
+          <li><a href="/blog/archives">Arquivos</a></li>
           <li><a href="/blog/feed">Feed/RSS</a></li>
-          <li><a href="/blog/contato">Contact us</a></li>
-          <li><a href="/blog/sobre">About</a></li>
+		  <li><a href="/solutions">Soluçoes</a></li>
+          <li><a href="/blog/contato">Contate-nos</a></li>
+          <li><a href="/blog/sobre">Sobre</a></li>
         </ul>
       </div>
     </div>
@@ -50,23 +51,46 @@
       <div class="sidebar">
         <!-- insert your sidebar items here -->
 		{% include "idiomas.html" %}
-        <h3>Latest News</h3>
-        <h4>New Website Launched</h4>
+        <h3>Novidades</h3>
+        <h4>Novo web site no ar</h4>
         <h5>Wed Sep 11 - 2013</h5>
-        <p>New website is in debug mode, i'm very happy for the job.<br /><a href="#">Read more</a></p>
+        <p>Novo site no ar e eu como sempre muito feliz com meu trabalho.<br /><a href="#">Leia mais</a></p>
         <p></p>
-        <h4>New frontend</h4>
+        <h4>Novo front-end</h4>
         <h5>Wed Sep 11 - 2013</h5>
-        <p>New frontend is a new light to the end of the tunnel, hehehe. :D<br /><a href="#">Read more</a></p>
-        <h3>Useful Links</h3>
+        <p>Novo front-end em HTML5 e CSS3 deu uma cara nova para a aplicação<br/><a href="#">Leia mais</a></p>
+   	
+		<h2><a href="/solutions">Serviços:</a></h2>
+		<ul>
+		<li>Auditoria teste de invasão</li>
+		<li>Auditoria de invasão em redes sem fio</li>
+		<li>Auditoria de segurança em servidores web</li>
+		<li>Teste de Negação de serviço distribuida DDOS</li>
+		<li>Auditoria em redes comporativas</li>
+		<li>Hardening de Servidores GNU/Linux e BSD</li>
+		<li>Monitoramento de Servidores 24/7</li>
+		<li>Consultoria de soluções em T.I. com software livre</li>
+		<li>Desenvolvimento de software</li>
+		<a href="/solutions">Saiba mais</a></p></lu>
+
+		<h3>Links uteis</h3>
         <ul>
-          <li><a href="https://docs.djangoproject.com/en/dev/releases/1.5/">Django docs</a></li>
-          <li><a href="http://python.org/doc">Python docs</a></li>
-          <li><a href="#">HTML5 docs</a></li>
-          <li><a href="#">CSS3 docs</a></li>
-		  <li><a href="#">MySQL docs</a></li>
+          <li><a href="https://www.djangoproject.com/">Django Project</a></li>
+          <li><a href="http://www.python.org/">Python</a></li>
+          <li><a href="http://www.w3.org/TR/html5/">HTML5 docs</a></li>
+          <li><a href="http://www.w3.org/Style/CSS/">CSS3</a></li>
+		  <li><a href="http://gunicorn.org/">Gunicorn</a></li>
+		  <li><a href="http://nginx.org/">Nginx</a></li>
+		  <li><a href="http://httpd.apache.org/">Apache2 httpd</a></li>
+		  <li><a href="http://www.postgresql.org/">PostgreeSQL</a></li>
+		  <li><a href="http://www.mysql.com">MySQL</a></li>
+		  <li><a href="http://www.debian.org/">Debian</a></li>
+		  <li><a href="http://www.kali.org/">Kali Linux</a></li>
+		  <li><a href="http://www.openbsd.org/">OpenBSD</a></li>
+		  <li><a href="http://www.offensive-security.com/">Offensive-Security</a></li>
+		  <li><a href="http://www.exploit-db.com/">Exploit-db</a></li>
         </ul>
-        <h3>Search</h3>
+        <h3>Busca</h3>
         <form method="post" action="#" id="search_form">
           <p>
             <input class="search" type="text" name="search_field" value="Enter keywords....." />
@@ -81,11 +105,7 @@
       </div>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>{% trans "Welcome to WebStrong" %}</h1>
-		<p>[+]Ethical Hacking</p
-		<p>[+]Programming</p>
-		<p>[+]Network</p>
-		<p>[+]Social Web</p>
+        
 		<br><p>------------------------------------------------------------------------------------------------------------------------------------------------</p></br>
 		<section>
 		<article>
@@ -100,7 +120,7 @@
 		</section>
 
 
-        <h2>Browser Compatibility</h2>
+        <h2>Compativilidade de Navegadores</h2>
         <p>This template has been tested in the following browsers:</p>
         <ul>
           <li>Internet Explorer 8</li>

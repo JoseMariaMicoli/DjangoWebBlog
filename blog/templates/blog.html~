@@ -1,13 +1,18 @@
 {% extends "base.html" %}
-
+{% load i18n %}
+<h1>{% trans "Bem-vindo a WebStrong" %}</h1>
+		<p>[+]Ethical Hacking</p
+		<p>[+]Programming</p>
+		<p>[+]Network</p>
+		<p>[+]Social Web</p>
 {% block content %}
 
 {% for post in object_list %}
 
-<h2><a href="/blog/{{ post.id }}">{{ post.title }}</a></h2>
+<h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
 
 <div class="post_meta">
-	on {{ post.created }}
+	{{ post.created }}
 </div>
 
 <div class="post_body">

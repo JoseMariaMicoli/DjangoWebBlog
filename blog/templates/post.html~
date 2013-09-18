@@ -1,9 +1,14 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load comments %}
-
+<h1>{% trans "Bem-vindo a WebStrong" %}</h1>
+		<p>[+]Ethical Hacking</p
+		<p>[+]Programming</p>
+		<p>[+]Network</p>
+		<p>[+]Social Web</p>
 {% block content %}
 
-<h2><a href="/blog/{{ post.id }}">{{% trans post.title %}}</a></h2>
+<h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
 
 <div class="post_meta">
 	{{ post.created }}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2><a href="/market/{{ ad.id }}">{{ ad.title }}</a></h2>
+
+<div class="post_meta">
+	{{ ad.created }}
+</div>
+
+<div class="post_body">
+	{{ ad.body|safe|linebreaks }}
+</div>
+
+{% endblock %}

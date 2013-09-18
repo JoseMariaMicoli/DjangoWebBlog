@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for solution in lista%}
+<div class="post_body">
+<lu><li><h2><a href="{{ solution.get_absolute_url }}">{{ solution.title }}</a><h2></li></lu><br>
+
+	{{ solution.body|safe|linebreaks }}
+</div>
+{% endfor %}
+
+{% endblock %}

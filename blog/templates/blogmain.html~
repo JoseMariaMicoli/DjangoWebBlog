@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+		<article>
+
+
+			<!-- blog post -->
+			{% block content %}
+
+			{% endblock %}
+		</article> <!-- blog post ends -->
+
+		</section>
+
+{% endblock %}

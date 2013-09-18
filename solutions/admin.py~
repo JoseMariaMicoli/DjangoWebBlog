@@ -1,0 +1,5 @@
+from django.contrib import admin
+from blog.models import Solution, ClientReport
+
+admin.site.register(Solution)
+admin.site.register(ClientReport)

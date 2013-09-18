@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Fique por dentro das soluçoẽs da WebStrong em T.I.</h1><br>
+{% for solution in lista%}
+<div class="post_body">
+<lu><li><h2><a href="{{ solution.get_absolute_url }}">{{ solution.title }}</a><h2></li></lu><br>
+<h3>Descrição</h3>
+	{{ solution.desc|linebreaks }}<br>
+<h3>Procedimento</h3>
+	{{ solution.body|safe|linebreaks }}<br>
+<h3>Novidades</h3>
+	{{ solution.oferta|linebreaks }}<br>
+</div>
+	<div class="fb-like" data-href="https://www.facebook.com/webStrongSec" data-width="450" data-colorscheme="dark" data-show-faces="true" data-send="true"></div>
+	<div class="fb-comments" data-href="http://www.webstrong.com" data-width="470"></div>
+	<div class="fb-follow" data-href="https://www.facebook.com/webStrongSec" data-width="450" data-show-faces="true"></div>
+{% endfor %}
+
+{% endblock %}
