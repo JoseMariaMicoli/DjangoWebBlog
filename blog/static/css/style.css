@@ -25,12 +25,21 @@ h1, h2, h3, h4, h5, h6
 
 h2
 { 
-	font: normal 175% 'century gothic', arial, sans-serif;
+	font: bold 175% 'century gothic', arial, sans-serif;
   	color: #A4AA04;
 	margin: 0;
-	background-color: #eee;
+	background-color: #171717;
 	padding: 5px;
 	font-size: 1.2em;
+}
+
+j{
+	font: bold 175% 'century gothic', arial, sans-serif;
+	color #A4AA04;
+	margin: 0;
+	background-color: 171717;
+	padding: 5px;
+
 }
 
 h4, h5, h6
