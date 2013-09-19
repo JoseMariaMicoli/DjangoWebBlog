@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% if mostrar %}<h3>{{ mostrar }}</h3>{% endif %}
 Informe seus dados abaixo:
 
 <form method="post"> {% csrf_token %}

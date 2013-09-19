@@ -14,7 +14,7 @@ class FormContato(forms.Form):
 
     def enviar(self):
         titulo = 'Mensagem enviada pelo site'
-        destino = 'alatazan@gmail.com'
+        destino = 'cr4sh.dump@gmail.com'
         texto = """
         Nome: %(nome)s
         E-mail: %(email)s
