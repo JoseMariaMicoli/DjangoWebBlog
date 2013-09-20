@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h1>Fique por dentro das soluçoẽs da WebStrong em T.I.</h1><br>
+<h2>Serviços</h2><br>
 {% for solution in lista%}
 <div class="post_body">
 <lu><li><h2><a href="{{ solution.get_absolute_url }}">{{ solution.title }}</a><h2></li></lu><br>
