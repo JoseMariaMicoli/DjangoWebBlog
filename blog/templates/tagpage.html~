@@ -1,12 +1,23 @@
 {% extends "base.html" %}
 
+ <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="/blog">Blog</a></li>
+          <li><a href="/blog/archives">Arquivos</a></li>
+          <li><a href="/blog/feed">Feed/RSS</a></li>
+		  <li><a href="/solutions">Soluções</a></li>
+          <li><a href="/blog/contato">Contate-nos</a></li>
+          <li><a href="/blog/sobre">Sobre</a></li>
+        </ul>
+      </div>
 {% block content %}
 
 <h2>Posts tagged: {{tag}}</h2>
 
 {% for post in posts %}
 
-<p>{{ post.created|date:"Y-m-d" }}: <a href="/blog/{{post.id}}">{{ post.title }}</a></p>
+<p>{{ post.create|date:"Y-m-d" }}: <a href="/blog/{{post.id}}">{{ post.title }}</a></p>
 
 {% endfor %}
 

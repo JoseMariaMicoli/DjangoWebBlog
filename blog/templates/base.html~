@@ -4,7 +4,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>WebStrong Cyber Security</title>
+  <title>Cloud-Strong Security</title>
   <meta charset="utf-8" />
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
@@ -31,49 +31,40 @@
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="/blog">Web<span class="logo_colour">Strong</span></a></h1>
+          <h1><a href="/blog">Cloud-<span class="logo_colour">Strong</span></a></h1>
           <su>Cyber Security</su>
         </div>
       </div>
-      <div id="menubar">
+     <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <li class="selected"><a href="/blog">Blog</a></li>
           <li><a href="/blog/archives">Arquivos</a></li>
           <li><a href="/blog/feed">Feed/RSS</a></li>
-		  <li><a href="/solutions">Soluçoes</a></li>
+		  <li><a href="/solutions">Soluções</a></li>
           <li><a href="/blog/contato">Contate-nos</a></li>
-          <li><a href="/blog/sobre">Sobre</a></li>
+          <li><a href="/blog/sobre">Sobre</a><li>
         </ul>
       </div>
     </div>
     <div id="site_content">
       <div class="sidebar">
         <!-- insert your sidebar items here -->
+		<h2>Idiomas</h2><br>
 		{% include "idiomas.html" %}
-        <h3>Novidades</h3>
-        <h4>Novo web site no ar</h4>
-        <h5>Wed Sep 11 - 2013</h5>
-        <p>Novo site no ar e eu como sempre muito feliz com meu trabalho.<br /><a href="#">Leia mais</a></p>
-        <p></p>
-        <h4>Novo front-end</h4>
-        <h5>Wed Sep 11 - 2013</h5>
-        <p>Novo front-end em HTML5 e CSS3 deu uma cara nova para a aplicação<br/><a href="#">Leia mais</a></p>
-   	
-		<h2><a href="/solutions">Serviços:</a></h2>
+		<br>
+		<h2><a href="/solutions">Serviços</a></h2>
 		<ul>
-		<li>Auditoria teste de invasão</li>
-		<li>Auditoria de invasão em redes sem fio</li>
+		<li>Teste de invasão em redes e sistemas</li>
+		<li>Teste de invasão em redes sem fio</li>
 		<li>Auditoria de segurança em servidores web</li>
 		<li>Teste de Negação de serviço distribuida DDOS</li>
-		<li>Auditoria em redes comporativas</li>
 		<li>Hardening de Servidores GNU/Linux e BSD</li>
 		<li>Monitoramento de Servidores 24/7</li>
 		<li>Consultoria de soluções em T.I. com software livre</li>
-		<li>Desenvolvimento de software</li>
 		<a href="/solutions">Saiba mais</a></p></lu>
 
-		<h3>Links uteis</h3>
+		<h2>Links uteis</h2>
         <ul>
           <li><a href="https://www.djangoproject.com/">Django Project</a></li>
           <li><a href="http://www.python.org/">Python</a></li>
@@ -90,7 +81,7 @@
 		  <li><a href="http://www.offensive-security.com/">Offensive-Security</a></li>
 		  <li><a href="http://www.exploit-db.com/">Exploit-db</a></li>
         </ul>
-        <h3>Busca</h3>
+        <h2>Busca</h2><br>
         <form method="post" action="#" id="search_form">
           <p>
             <input class="search" type="text" name="search_field" value="Enter keywords....." />
@@ -100,13 +91,24 @@
 			<a href="https://www.djangoproject.com/">_____________</a>
 		</div>
 		<br>
-		<div class="fb-like-box" data-href="https://www.facebook.com/webStrongSec" data-width="200" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+		<h2>Social</h2><br>
+			<br>
+		<a href="https://twitter.com/WebStrongSec" class="twitter-follow-button" data-show-count="false">Follow @WebStrongSec</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br>
+		<div class="fb-like-box" data-href="https://www.facebook.com/webStrongSec" data-width="200" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div><br>
+	<br> <h2>Novo web site no ar</h4>
+        <h5>Wed Sep 11 - 2013</h5>
+        <p>Novo site no ar e eu como sempre muito feliz com meu trabalho.<br /><a href="#">Leia mais</a></p>
+        <p></p>
+        <h2>Novo front-end</h4>
+        <h5>Wed Sep 11 - 2013</h5>
+        <p>Novo front-end em HTML5 e CSS3 deu uma cara nova para a aplicação<br/><a href="#">Leia mais</a></p>
         </form>
       </div>
       <div id="content">
         <!-- insert the page content here -->
         
-		<br><p>------------------------------------------------------------------------------------------------------------------------------------------------</p></br>
+		
 		<section>
 		<article>
 
@@ -121,7 +123,7 @@
 
 
         <h2>Compativilidade de Navegadores</h2>
-        <p>This template has been tested in the following browsers:</p>
+        <p>Esta aplicação web foi testada nos seguintes navegadores</p>
         <ul>
           <li>Internet Explorer 8</li>
           <li>Internet Explorer 7</li>
@@ -139,8 +141,8 @@
 <strong>Jose Maria Micoli</strong> - <em>Programmer & Pentester</em>
 </div>
 <div class="social">
-<a href="#">Twitter</a> | 
-<a href="https://facebook.com/josemaria.micoli">Facebook</a> |
+<a href="https://twitter.com/WebStrongSec">Twitter</a> | 
+<a href="https://www.facebook.com/webStrongSec">Facebook</a> |
 <a href="#">LinkedIn</a> | 
 <a href="https://github.com/JoseMariaMicoli">Github</a> 
 </div>

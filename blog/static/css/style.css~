@@ -24,20 +24,19 @@ h1, h2, h3, h4, h5, h6
   padding: 15px 0 5px 0;}
 
 h2
-{ 
-	font: normal 175% 'century gothic', arial, sans-serif;
-  	color: #A4AA04;
-	margin: 0;
-	background-color: #eee;
-	padding: 5px;
-	font-size: 1.2em;
+{ font: bold 175% 'century gothic', arial, sans-serif;
+  color: #1293EE;
+  margin: 0;
+  background-color: #171717;
+  padding: 5px;
+  font-size: 1.2em;
 }
 
 h4, h5, h6
 { margin: 0;
   padding: 0 0 5px 0;
   font: normal 120% arial, sans-serif;
-  color: #A4AA04;}
+  color: #1293EE;}
 
 h5, h6
 { font: italic 95% arial, sans-serif;
@@ -50,8 +49,7 @@ h6
 a, a:hover
 { outline: none;
   text-decoration: underline;
-  color: #A4AA04;
-}
+  color: #CC0000;}
 
 a:hover
 { text-decoration: none;}
@@ -96,14 +94,14 @@ ol li
   margin-right: auto;}
 
 #header
-{ background: #025587;
+{ background: #A80000;
   height: 240px;}
 
 #logo
 { width: 825px;
   position: relative;
   height: 168px;
-  background: #025587 url(/static/images/logo.png) no-repeat;}
+  background: #A80000 url(../images/logo.png) no-repeat;}
 
 #logo #logo_text 
 { position: absolute; 
@@ -123,7 +121,7 @@ ol li
   text-decoration: none;}
 
 #logo_text h1 a .logo_colour
-{ color: #80FFFF;}
+{ color: #FAF700;}
 
 #logo_text h2
 { font-size: 100%;
@@ -134,7 +132,7 @@ ol li
 { width: 877px;
   height: 72px;
   padding: 0;
-  background: #29415D url(/static/images/menu.png) repeat-x;} 
+  background: #8B0000 url(../images/menu.png) repeat-x;} 
 
 ul#menu, ul#menu li
 { float: left;
@@ -159,20 +157,19 @@ ul#menu li a
 
 ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 { color: #FFF;
-  background: #1C2C3E url(/static/images/menu_select.png) repeat-x;}
+  background: #451C1B url(../images/menu_select.png) repeat-x;}
 
 #site_content
 { width: 837px;
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 20px 24px 20px 37px;
-  background: #FFF url(/static/images/content.png) repeat-y;} 
+  background: #FFF url(../images/content.png) repeat-y;} 
 
 .sidebar
 { float: right;
   width: 190px;
-  padding: 0 15px 20px 15px;
-}
+  padding: 0 15px 20px 15px;}
 
 .sidebar ul
 { width: 178px; 
@@ -186,7 +183,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 .sidebar li a, .sidebar li a:hover
 { padding: 0 0 0 40px;
   display: block;
-  background: transparent url(/static/images/link.png) no-repeat left center;} 
+  background: transparent url(../images/link.png) no-repeat left center;} 
 
 .sidebar li a.selected
 { color: #444;
@@ -202,7 +199,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 
 #content ul li
 { list-style-type: none;
-  background: url(/static/images/bullet.png) no-repeat;
+  background: url(../images/sbullet.png) no-repeat;
   margin: 0 0 6px 0; 
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
@@ -213,7 +210,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   height: 33px;
   padding: 24px 0 5px 0;
   text-align: center; 
-  background: #29425E url(/static/images/footer.png) repeat-x;
+  background: #29425E url(foo/static/images/footer.png) repeat-x;
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 0.1em;}
@@ -233,6 +230,11 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   padding: 4px; 
   font: 100% arial, sans-serif;}
 
+#colours
+{ height: 0px;
+  text-align: right;
+  padding: 66px 16px 0px 300px;}
+  
 .form_settings
 { margin: 15px 0 0 0;}
 
@@ -260,7 +262,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   height: 33px;
   padding: 2px 0 3px 0;
   cursor: pointer; 
-  background: #263C56; 
+  background: #7D0F0F; 
   color: #FFF;}
 
 .form_settings textarea, .form_settings select
@@ -336,14 +338,5 @@ fb-like {
 
 su {
 	font: normal 175% 'century gothic', arial, sans-serif;
-  	color: #A4AA04;
-}
-
-sobre {
-	border: 1px solid black;
-	overflow: hidden;
-	background-color: #eee8aa;
-	margin: 20px;
-	color: #000000;
-	padding: 10px;
+  	color: #FAF700;
 }

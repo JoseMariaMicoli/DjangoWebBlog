@@ -1,10 +1,21 @@
 {% extends "base.html" %}
 
+ <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="/blog">Blog</a></li>
+          <li><a href="/blog/archives">Arquivos</a></li>
+          <li><a href="/blog/feed">Feed/RSS</a></li>
+		  <li><a href="/solutions">Soluções</a></li>
+          <li><a href="/blog/contato">Contate-nos</a></li>
+          <li><a href="/blog/sobre">Sobre</a></li>
+        </ul>
+      </div>
 {% block content %}
 
 {% for post in object_list %}
 
-<p>{{ post.create|date:"Y-m-d" }}:<a href="/blog/{{ post.get_absolute_url }}">{{ post.title }}</a></p>
+<p>{{ post.create|date:"Y-m-d" }}:<a href="{{ post.get_absolute_url }}">{{ post.title }}</a></p>
 
 
 {% endfor %}
