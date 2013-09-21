@@ -1,0 +1,26 @@
+Google: User-agent: Googlebot
+Disallow:/admin
+Disallow:admin/
+
+Google Imagens: User-agent: Googlebot-images
+Disallow:/admin
+Disallow:admin/
+
+Google Adwords: User-agent: Adsbot-Google
+Disallow:/admin
+Disallow:admin/
+
+Google Adsense: User-agent: Mediapartners-Google
+Disallow:/admin
+Disallow:admin/
+
+Yahoo: User-agent: Slurp
+Disallow:/admin
+Disallow:admin/
+
+Bing: User-agent: Bingbot
+Disallow:/admin
+Disallow:admin/
+
+
+
