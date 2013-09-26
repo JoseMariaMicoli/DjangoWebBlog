@@ -162,17 +162,30 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 position:relative;
 }
 
-#menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+#menu li a{
+color:#333; 
+text-decoration:none;
+ padding:5px 10px;
+display:block;
+-webkit-transition:	all 2s linear;
+	-moz-transition: all 2s linear;
+	-o-transition: all 2s linear;
+	transition: all 2s linear;
+}
  
 #menu li a:hover{
 -moz-box-shadow:0 3px 10px 0 #CCC;
 -webkit-box-shadow:0 3px 10px 0 #ccc;
 text-shadow:0px 0px 5px #fff;
+-webkit-transition:	all 2s linear;
+	-moz-transition: all 2s linear;
+	-o-transition: all 2s linear;
+	transition: all 2s linear;
 }
 
 #menu li ul{
 	position:absolute;
-	background: #451C1B;
+	background-color: #451C1B;
 	display:none;
 }
 
@@ -180,6 +193,8 @@ text-shadow:0px 0px 5px #fff;
 
 #menu li ul li{
 display:block;
+border:1px solid #ccc;
+width:200px;
 }
 
 #site_content

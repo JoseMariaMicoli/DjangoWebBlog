@@ -6,10 +6,15 @@
 <head>
   <title>Cloud-Strong Security</title>
   <meta charset="utf-8" />
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
+  <meta name="author" content="Cloud-Strong Security" />
+  <meta name="description" content="Cloud-Strong Security - Soluções e Consultoria em Segurança da Informação" />
+  <meta name="keywords" content="cloud-strong, segurança, web, pentest, teste, invasão" />
+  <meta name="keywords" content="auditoria, consultoria, ti, soluções, informação, ddos, security" />
+  <meta name="robots" content="index, follow" /> 
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="/static/css/style.css" title="style" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+  <link rel="robots.txt" href="/static/robots.txt" />
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -32,21 +37,27 @@
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
           <h1><a href="/blog">Cloud-<span class="logo_colour">Strong</span></a></h1>
-          <su>Cyber Security</su>
+          <su>Security</su>
         </div>
       </div>
+	<nav>
      <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <li class="selected"><a href="/blog">Blog</a></li>
           <li><a href="/blog/archives">Arquivos</a></li>
           <li><a href="/blog/feed">Feed/RSS</a></li>
-		  <li><a href="/solutions">Soluções</a></li>
-          <li><a href="/blog/contato">Contate-nos</a></li>
+		  <li><a href="/solutions">Soluções-Consultoria</a>
+			<ul>
+				<li><a href="/solutions">_-Teste de Invasão-_</a></li>
+				<li><a href="http://demo.owncloud.org" target="_blank">Secure Data Storage</a></li>
+			</ul></li>
+          <li><a href="/blog/contato">Contato</a></li>
           <li><a href="/blog/sobre">Sobre</a><li>
         </ul>
       </div>
     </div>
+	</nav>
     <div id="site_content">
       <div class="sidebar">
         <!-- insert your sidebar items here -->
@@ -66,20 +77,20 @@
 
 		<h2>Links uteis</h2>
         <ul>
-          <li><a href="https://www.djangoproject.com/">Django Project</a></li>
-          <li><a href="http://www.python.org/">Python</a></li>
-          <li><a href="http://www.w3.org/TR/html5/">HTML5 docs</a></li>
-          <li><a href="http://www.w3.org/Style/CSS/">CSS3</a></li>
-		  <li><a href="http://gunicorn.org/">Gunicorn</a></li>
-		  <li><a href="http://nginx.org/">Nginx</a></li>
-		  <li><a href="http://httpd.apache.org/">Apache2 httpd</a></li>
-		  <li><a href="http://www.postgresql.org/">PostgreeSQL</a></li>
-		  <li><a href="http://www.mysql.com">MySQL</a></li>
-		  <li><a href="http://www.debian.org/">Debian</a></li>
-		  <li><a href="http://www.kali.org/">Kali Linux</a></li>
-		  <li><a href="http://www.openbsd.org/">OpenBSD</a></li>
-		  <li><a href="http://www.offensive-security.com/">Offensive-Security</a></li>
-		  <li><a href="http://www.exploit-db.com/">Exploit-db</a></li>
+          <li><a href="https://www.djangoproject.com/" target="_blank">Django Project</a></li>
+          <li><a href="http://www.python.org/" target="_blank">Python</a></li>
+          <li><a href="http://www.w3.org/TR/html5/" target="_blank">HTML5 docs</a></li>
+          <li><a href="http://www.w3.org/Style/CSS/" target="_blank" >CSS3</a></li>
+		  <li><a href="http://gunicorn.org/" target="_blank">Gunicorn</a></li>
+		  <li><a href="http://nginx.org/" target="_blank">Nginx</a></li>
+		  <li><a href="http://httpd.apache.org/" target="_blank">Apache2 httpd</a></li>
+		  <li><a href="http://www.postgresql.org/" target="_blank">PostgreeSQL</a></li>
+		  <li><a href="http://www.mysql.com" target="_blank">MySQL</a></li>
+		  <li><a href="http://www.debian.org/" target="_blank">Debian</a></li>
+		  <li><a href="http://www.kali.org/" target="_blank">Kali Linux</a></li>
+		  <li><a href="http://www.openbsd.org/" target="_blank">OpenBSD</a></li>
+		  <li><a href="http://www.offensive-security.com/" target="_blank">Offensive-Security</a></li>
+		  <li><a href="http://www.exploit-db.com/" target="_blank">Exploit-db</a></li>
         </ul>
         <h2>Busca</h2><br>
         <form method="post" action="#" id="search_form">
@@ -93,9 +104,9 @@
 		<br>
 		<h2>Social</h2><br>
 			<br>
-		<a href="https://twitter.com/WebStrongSec" class="twitter-follow-button" data-show-count="false">Follow @WebStrongSec</a>
+		<a href="https://twitter.com/CloudStrongSec" class="twitter-follow-button" data-show-count="false">Follow @CloudStrongSec</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br>
-		<div class="fb-like-box" data-href="https://www.facebook.com/webStrongSec" data-width="200" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div><br>
+		<div class="fb-like-box" data-href="https://www.facebook.com/CloudStrong.Sec" data-width="200" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div><br>
 	<br> <h2>Novo web site no ar</h4>
         <h5>Wed Sep 11 - 2013</h5>
         <p>Novo site no ar e eu como sempre muito feliz com meu trabalho.<br /><a href="#">Leia mais</a></p>
@@ -141,10 +152,10 @@
 <strong>Jose Maria Micoli</strong> - <em>Programmer & Pentester</em>
 </div>
 <div class="social">
-<a href="https://twitter.com/WebStrongSec">Twitter</a> | 
-<a href="https://www.facebook.com/webStrongSec">Facebook</a> |
+<a href="https://twitter.com/CloudStrongSec" target="_blank">Twitter</a> | 
+<a href="https://www.facebook.com/CloudStrong.Sec" target="_blank">Facebook</a> |
 <a href="#">LinkedIn</a> | 
-<a href="https://github.com/JoseMariaMicoli">Github</a> 
+<a href="https://github.com/JoseMariaMicoli" target="_blank">Github</a> 
 </div>
     </div>
   </div>
